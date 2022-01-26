@@ -30,7 +30,8 @@ import loggedIn from "./loggedin";
                 <li><NavLink exact activeClassName="active" to="/">Home</NavLink></li>
                 <li><NavLink activeClassName="active" to="/user">User</NavLink></li>
                 <li><NavLink activeClassName="active" to="/admin">Admin</NavLink></li>
-                <li><NavLink activeClassName="active" to="/currency">Currency Converter</NavLink></li>
+                <li><NavLink activeClassName="active" to="/assistant">All Assistants</NavLink></li>
+                <li><NavLink activeClassName="active" to="/addassistant">Add Assistants</NavLink></li>
 
             </ul>
         </div>

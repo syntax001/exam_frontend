@@ -12,6 +12,8 @@ import NoMatch from "./components/NoMatch";
 import facade from "./apiFacade";
 import Currency from "./components/currency";
 import result from "./components/result";
+import AllAssistants from "./components/AllAssistants"
+import CreateAssistant from './components/CreateAssistant';
 
 
 console.log("Facade fra APP.JS");
@@ -53,9 +55,12 @@ function App() {
 
           <Route exact path="/admin" element={admin}/>
 
-          <Route exact path="/currency">
-            <Currency facade={facade}/>
+          <Route exact path="/assistant">
+            <AllAssistants facade={facade}/>
+          </Route>
 
+          <Route exact path="/addassistant">
+            <CreateAssistant facade={facade}/>
           </Route>
 
           <Route exact path="/result" element={result}/>
